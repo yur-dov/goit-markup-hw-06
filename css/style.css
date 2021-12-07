@@ -42,7 +42,7 @@ img {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 /*                     header                 */
@@ -152,7 +152,7 @@ img {
   color: var(--accent-color);
 }
 
-/*                   Banner                         */
+/* _____________________________________________________ Banner_____________________________*/
 
 .main-hero {
   background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%),
@@ -198,7 +198,6 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-
 }
 .backdrop {
   position: fixed;
@@ -234,10 +233,209 @@ img {
   top: 8px;
   right: 8px;
   cursor: pointer;
+  
+}
+.close-span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-btn:focus,
+.close-btn:hover{
+  fill: var(--accent-color);
+}
+/* _____________________________________________for-modal___________________________________ */
+
+
+.modal-content{
+    padding-top: 40px;
+  }
+  .title-modal{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding-bottom: 12px;
+  }
+  .form-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .form-label{
+    display: flex;
+    margin-bottom: 4px;
+    font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+  .form-input{
+    display: flex;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    position: relative;
+    padding-left: 42px;
+  }
+  .form-input:focus{
+    border: 1px solid #2196F3;
+  }
+  .form-input:focus ~ .name-svg,
+  .form-input:focus ~ .mail-svg,
+  .form-input:focus ~ .tel-svg  {
+    border: none;
+    fill: var(--accent-color);
+  }
+
+
+  .form-field{
+    margin-bottom: 10px;
+}
+.span-input{
+  display: flex;
+  position: relative;
+}
+.mail-svg,
+.tel-svg,
+.name-svg{
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+  }
+  .coment{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+.label-coment{
+  margin-bottom: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+ .text-coment{
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  outline: none;
+color: rgba(117, 117, 117, 0.5);
+ }
+ .text-coment:focus{
+  border: 1px solid #2196F3;
+ }
+.link-dill{
+  color: var(--accent-color);
+}
+.label-dill{
+  display: flex;
+  align-items: center;  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+} 
+
+.modal-chek{
+  -webkit-appearance:none;
+      -moz-appearance:none;
+           appearance:none;
 }
 
-/*                        concept                                      */
+.block-dill-svg{
+  display: flex;
+  justify-content: space-around; 
+  width: 100%;
+  
+  margin-bottom: 30px;
+}
+.label.dill{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.svg-dill{
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+}
+.modal-chek:checked + .chek-item {
+  background-size: contain;
+  border: 2px solid var(--accent-color);
+  background-color: var(--accent-color) ;
+}
+.chek-item{
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+}
 
+
+
+
+
+
+
+.dispatch-btn{
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--general-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  letter-spacing: 0.06em;
+  padding: 10px 55px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* ________________________________concept__________________________________________________ */
 .concept-title {
   color: #212121;
   font-style: normal;
@@ -268,6 +466,7 @@ img {
 }
 .concept-wrapp {
   display: flex;
+  justify-content: space-between;
 }
 .concept-list {
   width: 270px;
@@ -302,7 +501,6 @@ img {
   margin-right: 30px;
 }
 .wrapp-label {
-  /* height: 70px; */
   position: relative;
   background: rgba(47, 48, 58, 0.8);
   padding: 28px 0;
@@ -416,6 +614,7 @@ img {
 
 .custom-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .custom-link {
@@ -496,6 +695,7 @@ img {
 .footer-block {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .foot-navi {
   margin-right: 70px;
@@ -532,6 +732,10 @@ img {
   margin: 12px;
   fill: var(--general-color);
 }
+.social-link-block{
+  margin-right: 94px;
+}
+
 
 .social-link:focus,
 .social-link:hover {
@@ -540,6 +744,57 @@ img {
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
+.title-subscript{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.inside-mail{
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+  background: #2F303A;
+  margin-right: 12px;
+}
+.subscript-btn{
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--general-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  border: none;
+  padding-left: 29px;
+  } 
+  .link-btn{
+    display: flex;
+    align-items: center;
+  }
+
+.icon-telegram{
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  
+}
+
+
+
 
 /*                                  portfolio                      */
 
@@ -576,6 +831,7 @@ img {
 .filter-list:not(:last-child) {
   margin-right: 8px;
 }
+
 
 /*                                  portfolio list                  */
 

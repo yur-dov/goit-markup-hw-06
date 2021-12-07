@@ -75,7 +75,71 @@
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button class="close-btn" data-modal-close>
-                            <img src="./images/Vector-close.svg" width="11" height="11" alt="close-img">                            </button>
+                            <span class="close-span">
+                                <svg class="close-svg" width="11" height="11"> 
+                                    <use href="./images/symbol-defs.svg#icon-Vector-close"></use>
+                                </svg> 
+                            </span>  
+                        </button>
+                        <div class="modal-content">
+                            <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
+                            <form class="form-block">
+
+                                <div class="form-field">
+                                    <label for="name" class="form-label">Имя</label>
+                                    <span class="span-input">
+                                    <input type="text" id="name" class="form-input">                                    
+                                        <svg width="12" height="12" class="name-svg">
+                                            <use href="./images/symbol-defs.svg#icon-icon-people"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="tel" class="form-label">Телефон</label>
+                                    <span class="span-input">
+                                    <input type="tel" id="tel" class="form-input">                                  
+                                        <svg width="12" height="12" class="tel-svg">
+                                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="mail" class="form-label">Почта</label>
+                                    <span class="span-input">
+                                    <input type="email" id="mail" class="form-input">
+                                        <svg width="12" height="12" class="mail-svg">
+                                            <use href="./images/symbol-defs.svg#icon-koperta"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="coment">
+                                    <label for="text-coment" class="label-coment" >Комментарий</label>
+                                    <textarea class="text-coment" name="" id="text-coment" placeholder="Введите текст"></textarea>
+                                </div>
+
+
+                                <div class="block-dill-svg">
+                                    <label for="input-dill" class="label-dill">
+                                        <input type="checkbox" id="input-dill" class="modal-chek"/> 
+                                        <span class="chek-item">
+                                            <svg class="svg-dill" width="16" height="15">
+                                                <use href="./images/symbol-defs.svg#icon-ptica" ></use>
+                                            </svg>
+                                        </span>
+                                                                              
+                                        Соглашаюсь с рассылкой и принимаю &nbsp;
+                                        <a href="" class="link-dill">Условия договора</a>
+                                    </label>
+                                </div> 
+
+                                <button type="button" class="dispatch-btn">Отправить</button>
+
+
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>            
@@ -483,8 +547,24 @@
     
                 </ul>
             </div>
-    
-        </div>
+
+
+
+            <div class="subscript">
+                <h3 class="title-subscript" >Подпишитесь на рассылку</h3>
+                <input type="email" class="inside-mail" placeholder="E-mail" >
+
+
+                <button type="button" class="subscript-btn">
+                    <span class="link-btn" >Подписатся
+                        <svg class="icon-telegram">
+                            <use href="./images/symbol-defs.svg#icon-paper-lot"> </use>
+                        </svg>
+                    </span>
+                </button>
+
+
+            </div>
     </footer>
 
 
